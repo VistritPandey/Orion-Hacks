@@ -1,11 +1,11 @@
 body {
-    background-color: #f5f6fa;
+    background-color: azure;
   }
   
   .app {
     display: flex;
     justify-content: space-evenly;
-    background-color: #f5f6fa;
+    background-color: azure;
     padding: 20px;
   }
   
@@ -21,7 +21,7 @@ body {
   }
   
   .app__header > h1 {
-    color: #3c3ffc;
+    color: #fc3c3c;
     font-size: 2rem;
   }
   

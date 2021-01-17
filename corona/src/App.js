@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import {MenuItem, FormControl, Select, Card, CardContent} from "@material-ui/core";
+import {
+  MenuItem,
+  FormControl,
+  Select,
+  Card,
+  CardContent,
+} from "@material-ui/core";
 import InfoBox from "./InfoBox";
 import LineGraph from "./LineGraph";
 import Table from "./Table";
@@ -69,7 +75,7 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h1>COVID-19 Tracker</h1>
+          <h1>COVID-19 Live Data by country</h1>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
@@ -118,9 +124,9 @@ const App = () => {
       <Card className="app__right">
         <CardContent>
           <div className="app__information">
-            <h3>Live Cases by Country</h3>
+            <h3>Current no. of reported cases</h3>
             <Table countries={tableData} />
-            <h3>Worldwide new {casesType}</h3>
+            <h3>{casesType}'s worldwide</h3>
             <LineGraph casesType={casesType} />
           </div>
         </CardContent>
