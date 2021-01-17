@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>GoNative</title>
+    <style type="text/css">
+        div.container {
+        position: relative;
+        top: 100px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <span id="message">
+    </span>
+</div>
+<script>
+    var message = document.getElementById('message');
+    if (['ko', 'ko-kr', 'ko-kp'].indexOf(navigator.language.toLowerCase()) > -1) {
+        // Korean
+        message.innerHTML = '<p>인터넷 연결이 끊겼습니다.<br/>연결하고 다시 시도하시길 바랍니다.</p>';
+    } else {
+        // English
+        message.innerHTML = '<p>No internet connection.<br/>Connect and try again.</p>';
+    }
+</script>
+</body>
+</html>

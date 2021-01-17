@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shake_to_clear_cache">기기를 흔들면 캐시를 삭제할 수 있음</string>
+    <string-array name="device_shaken_options">
+        <item>캐시 삭제</item>
+        <item>취소</item>
+    </string-array>
+    <string name="cleared_cache">캐시 삭제중</string>
+</resources>
